@@ -22,8 +22,6 @@ class Course {
     async save() {
         const courses = await Course.getAll()
         courses.push(this.toObjectCurse())
-        console.log(courses);
-        
 
         return new Promise((resolve, reject) => {
             fs.writeFile(
