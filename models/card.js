@@ -15,7 +15,7 @@ class Card {
         const candidate = card.courses[idx]
 
         if (candidate) {
-            //курс уже есть
+            // курс уже есть
             candidate.count++
             card.courses[idx] = candidate
         } else {
