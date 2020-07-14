@@ -30,10 +30,9 @@ const PORT = process.env.PORT || 3000
 
 async function start() {
     try {
-        const url = `mongodb+srv://chipset:kasmxAHavXf1RHAU@cluster0-amzkb.mongodb.net/shop`
+        const url = `mongodb+srv://chipset:Bg5pguPXJ4WRTKnu@cluster0-amzkb.mongodb.net/shop`
         await mongoose.connect(url, {
             useNewUrlParser: true,
-            useUnifiedTopology: true,
             useFindAndModify: false
         })
         
